@@ -3,7 +3,7 @@
 Tools / packages
 
 - [Angular CLI](https://github.com/angular/angular-cli) 16.2.5
-- ng integrated vite / esbuild for `build` and `serve`
+- [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve`
 - nvm
 - nodejs 18.18
 - npm 10.2
@@ -11,20 +11,38 @@ Tools / packages
 - jest 29.7
 - TypeScript 5.1
 
-
 ## install
+
+### Package manager setup.
 
 ```bash
 nvm install 18.18
 nvm use 18.18
 npm i -g npm@10.2
 npm i -g pnpm@8.8
+```
+ 
+### Clone repo
 
+```bash
 git clone https://github.com/ron2015schmitt/sample-angular-project.git
 cd sample-angular-project
+```
+
+### Install packages
+
+```bash
 pnpm install
 ```
 
+### Run
+
+```bash
+ng serve
+```
+point browser to http://localhost:4200/
+
+![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/5cfdf453-d959-402e-8f41-4cd7b1aa6e96)
 
 ## How this repo was created
 
@@ -32,7 +50,6 @@ pnpm install
 
 - [Official Angular Compatibility Guide](https://angular.io/guide/versions)
 - [Unofficial Angular Compatibility Guide]((https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
-
 
 ### Set up package managers: nvm, npm, pnpm
 
@@ -53,6 +70,8 @@ npm install -g @angular/cli@16.25
 
 ### Create Angular scaffolding 
 
+The following creates `angular.json` and the `src` directory for the sample app.
+
 ```bash
 ng new sample-angular-project --minimal --skip-tests --skip-git --package-manager=pnpm
 cd sample-angular-project
@@ -64,7 +83,7 @@ cd sample-angular-project
 pnpm add typescript@5.1
 ```
 
-### Using integrated vite / esbuild in Angular 16
+### Set up integrated vite / esbuild in Angular 16
 
 ![Vite + esbuild](vite_esbuild.png)
 
@@ -75,14 +94,14 @@ pnpm add typescript@5.1
 https://blog.angular.io/angular-v16-is-here-4d7a28ec680d
 
 
-#### Using vite during `ng build`
+#### Set up vite during `ng build`
 
 In your project `angular.json`, add `-esbuild` to the following line
 
 ![Alt text](image-3.png)
 
 
-#### Using vite during `ng serve`
+#### Set up vite during `ng serve`
 
 Then (also in `angular.json`) add the text
 ```json
@@ -96,7 +115,7 @@ in the following location
 ![Alt text](image-2.png)
 
 
-## Jest support in Angular 16
+## Set up Jest 
 
 Install jest
 
