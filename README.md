@@ -123,6 +123,7 @@ Install jest
 
 ```bash
 pnpm add jest --save-dev
+pnpm add @types/jest --save-dev
 ```
 
 Add the following to your `angular.json` in the `"architect"` section
@@ -135,4 +136,15 @@ Add the following to your `angular.json` in the `"architect"` section
           }
         }
 ```
+
+Add `"jest"` to the `compilerOptions.types` array in your `tsconfig.spec.json`
+```json
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jest"  // <-- Add this 
+    ]
+  },
+```
+
 
