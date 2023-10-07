@@ -122,7 +122,7 @@ in the following location
 Install jest
 
 ```bash
-npm install jest --save-dev
+pnpm add jest --save-dev
 ```
 
 Add the following to your `angular.json` in the `"architect"` section
