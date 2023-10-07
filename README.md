@@ -85,7 +85,8 @@ pnpm add typescript@5.1
 
 ### Set up integrated vite / esbuild in Angular 16
 
-![Vite + esbuild](vite_esbuild.png)
+![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
+
 
 >In ng serve we’re now using Vite for the development server, and esbuild powers both your development and production builds!
 >
@@ -98,7 +99,8 @@ https://blog.angular.io/angular-v16-is-here-4d7a28ec680d
 
 In your project `angular.json`, add `-esbuild` to the following line
 
-![Alt text](image-3.png)
+![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/98e502f5-3677-423d-bc01-05d0c3f46141)
+
 
 
 #### Set up vite during `ng serve`
@@ -112,7 +114,7 @@ Then (also in `angular.json`) add the text
 
 in the following location
 
-![Alt text](image-2.png)
+![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
 ## Set up Jest 
