@@ -124,6 +124,7 @@ Install jest
 ```bash
 pnpm add jest --save-dev
 pnpm add @types/jest --save-dev
+pnpm --recursive update
 ```
 
 Add the following to your `angular.json` in the `"architect"` section
