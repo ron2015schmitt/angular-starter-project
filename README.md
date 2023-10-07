@@ -49,7 +49,7 @@ point browser to http://localhost:4200/
 ### Compatibility Guides
 
 - [Official Angular Compatibility Guide](https://angular.io/guide/versions)
-- [Unofficial Angular Compatibility Guide]((https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
+- [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
 ### Set up package managers: nvm, npm, pnpm
 
