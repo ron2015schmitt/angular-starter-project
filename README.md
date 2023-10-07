@@ -65,7 +65,7 @@ npm i -g pnpm@8.8
 The current version of the global Angular CLI determines the version of Angular to be used.  
 
 ```bash
-npm install -g @angular/cli@16.25
+npm install -g @angular/cli@16.2.5
 ```
 
 ### Create Angular scaffolding 
