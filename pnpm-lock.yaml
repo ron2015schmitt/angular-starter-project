@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
@@ -49,6 +49,9 @@ devDependencies:
   '@angular/compiler-cli':
     specifier: ^16.2.0
     version: 16.2.8(@angular/compiler@16.2.8)(typescript@5.1.6)
+  '@types/jest':
+    specifier: ^29.5.5
+    version: 29.5.5
   jest:
     specifier: ^29.7.0
     version: 29.7.0
@@ -64,6 +67,16 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
+    dev: true
+
+  /@angular-devkit/architect@0.1602.5:
+    resolution: {integrity: sha512-lbFA2nrF0A1Rs6AU9yYeSHflsiorqL4tSwL7wMtQWMNawRjORiY7IwETyL0PmnlKsbbPlTGnWBhMfeGyBOowEw==}
+    engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
+    dependencies:
+      '@angular-devkit/core': 16.2.5
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - chokidar
     dev: true
 
   /@angular-devkit/architect@0.1602.5(chokidar@3.5.3):
@@ -214,6 +227,23 @@ packages:
       - chokidar
     dev: true
 
+  /@angular-devkit/core@16.2.5:
+    resolution: {integrity: sha512-d7xzdvv3aZiNgMtFERR3TxUAdKjzWiWUN94jjBeovITP32yFDz02DzXwUGMFIA3/YhZ/sAEEOKVF3pBXLJ6P4g==}
+    engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
+    peerDependencies:
+      chokidar: ^3.5.2
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+    dependencies:
+      ajv: 8.12.0
+      ajv-formats: 2.1.1
+      jsonc-parser: 3.2.0
+      picomatch: 2.3.1
+      rxjs: 7.8.1
+      source-map: 0.7.4
+    dev: true
+
   /@angular-devkit/core@16.2.5(chokidar@3.5.3):
     resolution: {integrity: sha512-d7xzdvv3aZiNgMtFERR3TxUAdKjzWiWUN94jjBeovITP32yFDz02DzXwUGMFIA3/YhZ/sAEEOKVF3pBXLJ6P4g==}
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -224,7 +254,7 @@ packages:
         optional: true
     dependencies:
       ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
+      ajv-formats: 2.1.1
       chokidar: 3.5.3
       jsonc-parser: 3.2.0
       picomatch: 2.3.1
@@ -236,7 +266,7 @@ packages:
     resolution: {integrity: sha512-Du2qaN4SVrtPe2jQuo0VVZgFCUwouyv7tTwyJXv32Kvfw9s3IQD/yYSh0H+XTEbplUV9Fc8b9zWaVhVY1yvrSw==}
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 16.2.5(chokidar@3.5.3)
+      '@angular-devkit/core': 16.2.5
       jsonc-parser: 3.2.0
       magic-string: 0.30.1
       ora: 5.4.1
@@ -260,8 +290,8 @@ packages:
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
     dependencies:
-      '@angular-devkit/architect': 0.1602.5(chokidar@3.5.3)
-      '@angular-devkit/core': 16.2.5(chokidar@3.5.3)
+      '@angular-devkit/architect': 0.1602.5
+      '@angular-devkit/core': 16.2.5
       '@angular-devkit/schematics': 16.2.5
       '@schematics/angular': 16.2.5
       '@yarnpkg/lockfile': 1.1.0
@@ -2286,7 +2316,7 @@ packages:
     resolution: {integrity: sha512-huYEiU5KK2/upy9LJUdecIB4Jwh4LQMQz5cz6EMr8uhrCTykEKXlBpGJVHZyDK1K5/riymSr9G86BdN2PcY1Cw==}
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 16.2.5(chokidar@3.5.3)
+      '@angular-devkit/core': 16.2.5
       '@angular-devkit/schematics': 16.2.5
       jsonc-parser: 3.2.0
     transitivePeerDependencies:
@@ -2486,6 +2516,13 @@ packages:
     resolution: {integrity: sha512-kv43F9eb3Lhj+lr/Hn6OcLCs/sSM8bt+fIaP11rCYngfV6NVjzWXJ17owQtDQTL9tQ8WSLUrGsSJ6rJz0F1w1A==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.1
+    dev: true
+
+  /@types/jest@29.5.5:
+    resolution: {integrity: sha512-ebylz2hnsWR9mYvmBFbXJXr+33UPc4+ZdxyDXh5w0FlPBTfCVN3wPL+kuOiQt3xvrK419v7XWeAs+AeOksafXg==}
+    dependencies:
+      expect: 29.7.0
+      pretty-format: 29.7.0
     dev: true
 
   /@types/json-schema@7.0.13:
@@ -2789,10 +2826,8 @@ packages:
       indent-string: 4.0.0
     dev: true
 
-  /ajv-formats@2.1.1(ajv@8.12.0):
+  /ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -3519,7 +3554,7 @@ packages:
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.8.2)
+      jest-config: 29.7.0
       jest-util: 29.7.0
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -4902,7 +4937,7 @@ packages:
       create-jest: 29.7.0
       exit: 0.1.2
       import-local: 3.1.0
-      jest-config: 29.7.0(@types/node@20.8.2)
+      jest-config: 29.7.0
       jest-util: 29.7.0
       jest-validate: 29.7.0
       yargs: 17.7.2
@@ -4911,6 +4946,45 @@ packages:
       - babel-plugin-macros
       - supports-color
       - ts-node
+    dev: true
+
+  /jest-config@29.7.0:
+    resolution: {integrity: sha512-uXbpfeQ7R6TZBqI3/TxCU4q4ttk3u0PJeC+E0zbfSoSjq6bJ7buBPxzQPL0ifrkY4DNu4JUdk0ImlBUYi840eQ==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    peerDependencies:
+      '@types/node': '*'
+      ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      ts-node:
+        optional: true
+    dependencies:
+      '@babel/core': 7.22.9
+      '@jest/test-sequencer': 29.7.0
+      '@jest/types': 29.6.3
+      babel-jest: 29.7.0(@babel/core@7.22.9)
+      chalk: 4.1.2
+      ci-info: 3.9.0
+      deepmerge: 4.3.1
+      glob: 7.2.3
+      graceful-fs: 4.2.11
+      jest-circus: 29.7.0
+      jest-environment-node: 29.7.0
+      jest-get-type: 29.6.3
+      jest-regex-util: 29.6.3
+      jest-resolve: 29.7.0
+      jest-runner: 29.7.0
+      jest-util: 29.7.0
+      jest-validate: 29.7.0
+      micromatch: 4.0.5
+      parse-json: 5.2.0
+      pretty-format: 29.7.0
+      slash: 3.0.0
+      strip-json-comments: 3.1.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - supports-color
     dev: true
 
   /jest-config@29.7.0(@types/node@20.8.2):
@@ -6753,7 +6827,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.13
       ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
+      ajv-formats: 2.1.1
       ajv-keywords: 5.1.0(ajv@8.12.0)
     dev: true
 
