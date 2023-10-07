@@ -80,7 +80,7 @@ cd sample-angular-project
 ### Add TypeScript
 
 ```bash
-pnpm add typescript@5.1
+pnpm add typescript@5.1 -w
 ```
 
 ### Set up integrated vite / esbuild in Angular 16
