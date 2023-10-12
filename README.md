@@ -7,7 +7,7 @@ Tools / packages
 - nvm
 - nodejs 18.18
 - npm 10.2
-- pnpm 8.8
+- pnpm 8.9
 - jest 29.7
 - TypeScript 5.1
 
@@ -19,7 +19,7 @@ Tools / packages
 nvm install 18.18
 nvm use 18.18
 npm i -g npm@10.2
-npm i -g pnpm@8.8
+npm i -g pnpm@8.9
 ```
  
 ### Clone repo
@@ -57,7 +57,7 @@ point browser to http://localhost:4200/
 nvm install 18.18
 nvm use 18.18
 npm i -g npm@10.2
-npm i -g pnpm@8.8
+npm i -g pnpm@8.9
 ```
 
 ### Set up Angular 
@@ -117,7 +117,19 @@ in the following location
 ![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
-## Set up Jest 
+### add engines and bin to the `package.json`
+
+Add the tool versions to `package.json`
+
+```json
+  "engines": {
+    "node": "18.18",
+    "npm": "10.2",
+    "pnpm": "8.9"
+  },
+```
+
+### Set up Jest 
 
 Install jest
 
