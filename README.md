@@ -122,6 +122,9 @@ in the following location
 Add the tool versions to `package.json`
 
 ```json
+  "bin": {
+    "myng": "./node_modules/@angular/cli/bin/ng"
+  },
   "engines": {
     "node": "18.18",
     "npm": "10.2",
