@@ -1,6 +1,14 @@
 {
   "name": "sample-angular-project",
-  "version": "0.0.0",
+  "version": "1.0.0",
+    "bin": {
+    "myng": "./node_modules/@angular/cli/bin/ng"
+  },
+  "engines": {
+    "node": "18.18",
+    "npm": "10.2",
+    "pnpm": "8.9"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
