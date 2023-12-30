@@ -1,3 +1,6 @@
+
+<span style="background-color: #FFFF00">Marked text</span>
+
 # Sample Angular Project With Tools 2024 (Angular 17.0)
 
 Tools / packages
@@ -28,8 +31,8 @@ npm i -g pnpm@8.13
 ### Clone repo
 
 ```bash
-git clone https://github.com/ron2015schmitt/sample-angular-project.git
-cd sample-angular-project
+git clone https://github.com/ron2015schmitt/angular-starter-project.git
+cd angular-starter-project
 ```
 
 ### Install packages
@@ -45,7 +48,7 @@ ng serve
 ```
 point browser to http://localhost:4200/
 
-![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/5cfdf453-d959-402e-8f41-4cd7b1aa6e96)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/5cfdf453-d959-402e-8f41-4cd7b1aa6e96)
 
 ## How this repo was created
 
@@ -76,19 +79,21 @@ npm install -g @angular/cli@17.0
 The following creates `angular.json` and the `src` directory for the sample app.
 
 ```bash
-ng new sample-angular-project --minimal --skip-tests --skip-git --package-manager=pnpm
-cd sample-angular-project
+ng new angular-starter-project --minimal --skip-tests --skip-git --package-manager=pnpm
 ```
+
+Answer questions when prompted:
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/d1b5eabc-c2ee-47d2-a39f-d5a23918af7f)
+
 
 ### Add TypeScript
 
-```bash
-pnpm add typescript@5.2 -w
-```
+Starting in Angular 17.0, TypeScript is now included by default!
 
 ### Set up integrated vite / esbuild in Angular 16
 
-![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
 
 
 >In ng serve we’re now using Vite for the development server, and esbuild powers both your development and production builds!
@@ -102,7 +107,7 @@ https://blog.angular.io/angular-v16-is-here-4d7a28ec680d
 
 In your project `angular.json`, add `-esbuild` to the following line
 
-![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/98e502f5-3677-423d-bc01-05d0c3f46141)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/98e502f5-3677-423d-bc01-05d0c3f46141)
 
 
 
@@ -117,7 +122,7 @@ Then (also in `angular.json`) add the text
 
 in the following location
 
-![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
 ### Add `engines` and `bin` sections to the `package.json`
@@ -129,11 +134,21 @@ Add the tool versions to `package.json`
     "myng": "./node_modules/@angular/cli/bin/ng"
   },
   "engines": {
-    "node": "20.20",
+    "node": "20.10",
     "npm": "10.2",
     "pnpm": "8.13"
   },
 ```
+
+Check the versions
+
+```bash
+ng version
+```
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9473add-10b3-4f66-b00e-310bdb3b6b1e)
+
+
 
 ### Set up Jest 
 
@@ -145,23 +160,28 @@ pnpm add @types/jest --save-dev
 pnpm --recursive update
 ```
 
-Add the following to your `angular.json` in the `"architect"` section
+Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"` section
+
 ```json
-        "test": {
-          "builder": "@angular-devkit/build-angular:jest",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "tsConfig": "tsconfig.spec.json",
-            "polyfills": ["zone.js", "zone.js/testing"]
-          }
-        }
+            "outputPath": "dist/sample-angular-project",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"  <-- add this
+            ],
 ```
 
-Add `"jest"` to the `compilerOptions.types` array in your `tsconfig.spec.json`
+Add `"jest"` to the `compilerOptions.types` array in your `tsconfig.app.json`
 ```json
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jest"  // <-- Add this 
+      "jest"  <-- Add this 
     ]
   },
 ```
