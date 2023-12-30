@@ -5,7 +5,7 @@
 
 Tools / packages
 
-- [Angular CLI](https://github.com/angular/angular) 17.0
+- [Angular](https://github.com/angular/angular) 17.0
 - [Angular CLI](https://github.com/angular/angular-cli) 17.0
 - [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve`
 - nvm
