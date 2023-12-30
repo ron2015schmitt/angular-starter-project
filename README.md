@@ -120,11 +120,14 @@ in the following location
 ![image](https://github.com/ron2015schmitt/sample-angular-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
-### add engines and bin to the `package.json`
+### Add `engines` and `bin` sections to the `package.json`
 
 Add the tool versions to `package.json`
 
 ```json
+  "bin": {
+    "myng": "./node_modules/@angular/cli/bin/ng"
+  },
   "engines": {
     "node": "20.20",
     "npm": "10.2",
