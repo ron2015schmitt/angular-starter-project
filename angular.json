@@ -80,7 +80,7 @@
             "development": {
               "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
+              "vendorChunk": false,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -90,12 +90,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "forceEsbuild": true
+          },
           "configurations": {
             "production": {
-              "browserTarget": "sample-angular-project:build:production"
+              "buildTarget": "sample-angular-project:build:production"
             },
             "development": {
-              "browserTarget": "sample-angular-project:build:development"
+              "buildTarget": "sample-angular-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sample-angular-project:build"
+            "buildTarget": "sample-angular-project:build"
           }
         },
         "test": {

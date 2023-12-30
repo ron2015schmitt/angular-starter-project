@@ -1,25 +1,28 @@
-# Sample Angular Project With Tools 2023
+# Sample Angular Project With Tools 2024 (Angular 17.0)
 
 Tools / packages
 
-- [Angular CLI](https://github.com/angular/angular-cli) 16.2.5
+- [Angular CLI](https://github.com/angular/angular) 17.0
+- [Angular CLI](https://github.com/angular/angular-cli) 17.0
 - [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve`
 - nvm
-- nodejs 18.18
+- nodejs 20.10
 - npm 10.2
-- pnpm 8.9
+- pnpm 8.13
 - jest 29.7
-- TypeScript 5.1
+- TypeScript 5.2
+
+Material Design 3.0 coming later in 2024...
 
 ## install
 
 ### Package manager setup.
 
 ```bash
-nvm install 18.18
-nvm use 18.18
+nvm install 20.10
+nvm use 20.10
 npm i -g npm@10.2
-npm i -g pnpm@8.9
+npm i -g pnpm@8.13
 ```
  
 ### Clone repo
@@ -54,10 +57,10 @@ point browser to http://localhost:4200/
 ### Set up package managers: nvm, npm, pnpm
 
 ```bash
-nvm install 18.18
-nvm use 18.18
+nvm install 20.10
+nvm use 20.10
 npm i -g npm@10.2
-npm i -g pnpm@8.9
+npm i -g pnpm@8.13
 ```
 
 ### Set up Angular 
@@ -65,7 +68,7 @@ npm i -g pnpm@8.9
 The current version of the global Angular CLI determines the version of Angular to be used.  
 
 ```bash
-npm install -g @angular/cli@16.2.5
+npm install -g @angular/cli@17.0
 ```
 
 ### Create Angular scaffolding 
@@ -80,7 +83,7 @@ cd sample-angular-project
 ### Add TypeScript
 
 ```bash
-pnpm add typescript@5.1 -w
+pnpm add typescript@5.2 -w
 ```
 
 ### Set up integrated vite / esbuild in Angular 16
@@ -123,9 +126,9 @@ Add the tool versions to `package.json`
 
 ```json
   "engines": {
-    "node": "18.18",
+    "node": "20.20",
     "npm": "10.2",
-    "pnpm": "8.9"
+    "pnpm": "8.13"
   },
 ```
 
