@@ -13,7 +13,8 @@ Tools / packages
 - npm 10.2
 - pnpm 8.13
 - jest 29.7
-- TypeScript 5.2
+- [Javascript ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg)
+- [TypeScript 5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html)
 
 Material Design 3.0 coming later in 2024...
 
