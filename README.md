@@ -1,6 +1,6 @@
 # Angular Starter Project With Tools 2024: Angular 17.0.8
 
-Tools / packages
+## Tools / packages
 
 - [Angular](https://github.com/angular/angular) 17.0
 - [Angular CLI](https://github.com/angular/angular-cli) 17.0
@@ -18,6 +18,10 @@ Tools / packages
 [SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section [How this Repo was Created](#repo-create) 
 
 
+## Angular compatibility Guides
+
+- [Official Angular Compatibility Guide](https://angular.io/guide/versions)
+- [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
 
 Material Design 3.0 coming later in 2024...
@@ -75,12 +79,6 @@ point browser to http://localhost:4200/
 | ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b24bdf76-20ca-4a17-8c62-135911f0c1ee)  |
 
 
-<br>
-<br>
-<br>
-
-
-
 ### Run jest
 
 ```bash
@@ -93,12 +91,16 @@ You should see something like
 
 
 
+<br>
+<br>
+<br>
+
+
+
+
+
 ## <a name="repo-create"></a> How this repo was created
 
-### Compatibility Guides
-
-- [Official Angular Compatibility Guide](https://angular.io/guide/versions)
-- [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
 ### Set up package managers: nvm, npm, pnpm
 
