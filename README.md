@@ -247,7 +247,7 @@ in the following location
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
-### Fix schema validation bug in 
+### Fix schema validation bug in Angular 17
 
 Angular 17.0 introduced the following bug:
 
