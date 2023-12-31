@@ -39,7 +39,7 @@ npm i -g pnpm@8.13
 ```
 
 **Notes**
-1. With nvm, using `-g` is preferred because it only applies to the specific NodeJs version**
+1. With nvm, using `-g` is preferred because it only applies to the specific NodeJs version
 2. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`
 3. After this step, **always use** `pnpm`
 4. `pnpm` uses `pnpm-lock.yaml` instead of `package-lock.json`
