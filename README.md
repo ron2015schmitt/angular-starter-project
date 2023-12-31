@@ -15,7 +15,7 @@
 - [Sass](https://sass-lang.com/)
 - RxJs: 7.8.1
 
-[SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section [How this Repo was Created](#repo-create) 
+[SSR](https://angular.io/guide/ssr) is now an option in Angular!  SSR is not included in this starter project, but refer to section [How this Repo was Created](#repo-create) on how to enable SSR. 
 
 
 ## Angular compatibility Guides
