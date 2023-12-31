@@ -21,6 +21,14 @@ Material Design 3.0 coming later in 2024...
 
 ## install
 
+
+### Clone repo
+
+```bash
+git clone https://github.com/ron2015schmitt/angular-starter-project.git
+cd angular-starter-project
+```
+
 ### Package manager setup.
 
 ```bash
@@ -30,12 +38,6 @@ npm i npm@10.2
 npm i pnpm@8.13
 ```
  
-### Clone repo
-
-```bash
-git clone https://github.com/ron2015schmitt/angular-starter-project.git
-cd angular-starter-project
-```
 
 ### Install packages
 
