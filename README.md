@@ -34,9 +34,11 @@ cd angular-starter-project
 ```bash
 nvm install 20.10
 nvm use 20.10
-npm i npm@10.2
-npm i pnpm@8.13
+npm i -g npm@10.2
+npm i -g pnpm@8.13
 ```
+
+**Note that with nvm, using `-g` is preferred because it only applies to the specific NodeJs version**
  
 
 ### Install packages
@@ -74,9 +76,12 @@ point browser to http://localhost:4200/
 ```bash
 nvm install 20.10
 nvm use 20.10
-npm i npm@10.2
-npm i pnpm@8.13
+npm i -g npm@10.2
+npm i -g pnpm@8.13
 ```
+
+**Note that with nvm, using `-g` is preferred because it only applies to the specific NodeJs version**
+
 
 ### Set up Angular 
 
