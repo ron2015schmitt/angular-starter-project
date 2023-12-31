@@ -1,7 +1,7 @@
 
 
 
-# Angular Starter Project With Tools 2024 (Angular 17.0)
+# Angular Starter Project With Tools 2024 (Angular 17.0.8)
 
 Tools / packages
 
