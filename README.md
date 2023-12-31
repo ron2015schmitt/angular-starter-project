@@ -15,7 +15,7 @@ Tools / packages
 - [Sass](https://sass-lang.com/)
 - RxJs: 7.8.1
 
-[SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section <a name="repo-create">How this repo was created</a>
+[SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section [How this Repo was Created](#repo-create) 
 
 
 
@@ -92,8 +92,8 @@ You should see something like
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c6f57e1f-4a78-4e58-a6bc-789a5ae76e65)
 
 
-<a name="repo-create"></a>
-## How this repo was created
+
+## <a name="repo-create"></a> How this repo was created
 
 ### Compatibility Guides
 
