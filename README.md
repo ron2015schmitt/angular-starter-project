@@ -206,6 +206,7 @@ Install jest
 ```bash
 pnpm add jest --save-dev
 pnpm add @types/jest --save-dev
+pnpm add jest-environment-jsdom --save-dev
 pnpm --recursive update
 ```
 
