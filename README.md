@@ -1,19 +1,21 @@
 # Angular Starter Project With Tools 2024: Angular 17.0.8
 
-## Tools / packages
+## Tools / packages included
 
-- [Angular](https://github.com/angular/angular) 17.0
-- [Angular CLI](https://github.com/angular/angular-cli) 17.0
-- [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve`
-- nvm
-- nodejs 20.10
-- npm 10.2
-- pnpm 8.13
-- jest 29.7
-- [Javascript ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg)
-- [TypeScript 5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html)
-- [Sass](https://sass-lang.com/)
-- RxJs: 7.8.1
+|  Tool | Version |
+| ------------- | ------------- | 
+| [Angular](https://github.com/angular/angular) | 17.0 |
+| [Angular CLI](https://github.com/angular/angular-cli) | 17.0 |
+| [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve` | -- | 
+| nvm | (v0.39) |
+| NodeJs | 20.10 |
+| npm | 10.2 |
+| pnpm | 8.13 |
+| jest | 29.7 |
+| JavaScript | [ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg) |
+| TypeScript | [5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html) |
+| [Sass](https://sass-lang.com/) | -- |
+| RxJs | 7.8.1 |
 
 
 Material Design 3.0 support coming later in 2024...
@@ -30,7 +32,9 @@ Material Design 3.0 support coming later in 2024...
 
 
 
-## install
+## Installation
+
+The installation must be run from a linux terminal, or in Windows you can use a [git bash](https://gitforwindows.org/) terminal.
 
 
 ### Clone repo
@@ -40,7 +44,29 @@ git clone https://github.com/ron2015schmitt/angular-starter-project.git
 cd angular-starter-project
 ```
 
+### Install `nvm`
+
+If you do not already have nvm installed,  execute the following to install [nvm](https://github.com/nvm-sh/nvm)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Notes:
+1. After the command executes close out your terminal and open a new terminal to ensure everything was installed correctly
+2. You can check the [nvm git repo](https://github.com/nvm-sh/nvm) to find the latest version number instead of 0.39.7.
+3. To upgrade `nvm`, you use the same command as given above.
+
+Check the verison of `nvm`
+
+```bash
+nvm -v
+```
+
+
 ### Package manager setup.
+
+The project utilizes the [pnpm](https://pnpm.io/) package manager.  However `npm` is needed to install `pnpm`.
 
 ```bash
 nvm install 20.10
@@ -50,11 +76,11 @@ npm i -g pnpm@8.13
 ```
 
 **Notes**
-1. With nvm, using `-g` is preferred because it only applies to the specific NodeJs version
-2. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`
-3. After this step, **always use** `pnpm`
+1. With nvm, using the global option `-g` is preferred because it only applies to the specific NodeJs version.
+2. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`.
+3. After this step, **always use** `pnpm`.
 4. `pnpm` uses `pnpm-lock.yaml` instead of `package-lock.json`
-5. If by mistake, you run npm to install the project or a project package, execute the following (**with care**) to fix:
+5. If by mistake, you run `npm` to install the project or a project package, execute the following (**with care**) to fix:
 ```bash
 rm package-lock.json
 rm -fr node_modules/
