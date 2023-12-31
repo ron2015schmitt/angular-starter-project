@@ -50,7 +50,9 @@ ng serve
 ```
 point browser to http://localhost:4200/
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b24bdf76-20ca-4a17-8c62-135911f0c1ee)
+|  http://localhost:4200/ | 
+| ------------- | 
+| ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b24bdf76-20ca-4a17-8c62-135911f0c1ee)  |
 
 
 <br>
@@ -107,6 +109,11 @@ Add the following to `.gitignore`
 ```
 
 
+### Add TypeScript
+
+Starting in Angular 17.0, TypeScript is now included by default!
+
+
 ### Change project version in `package.json`
 
 In your project `package.json`, change project version to match Angular version 
@@ -134,13 +141,9 @@ Check the versions
 ng version
 ```
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9473add-10b3-4f66-b00e-310bdb3b6b1e)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/10faf300-c155-4882-95e9-033b7cc6f866)
 
-  
 
-### Add TypeScript
-
-Starting in Angular 17.0, TypeScript is now included by default!
 
 ### Set up integrated vite / esbuild 
 
@@ -178,7 +181,7 @@ in the following location
 
 ### Fix schema validation bug in 
 
-Angular 17.09 introduced the following bug:
+Angular 17.0 introduced the following bug:
 
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9c7eb1c-4650-46f3-9eb0-c4a14ee567e6)
 
@@ -199,7 +202,7 @@ pnpm add @types/jest --save-dev
 pnpm --recursive update
 ```
 
-Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"` section
+Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"/"build"/"options"/"polyfills"` section
 
 ```json
       "architect": {
@@ -214,6 +217,27 @@ Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"` s
               "zone.js/testing"  <-- add this
             ],
 ```
+
+
+Add the following `"test"` section inside the "architect" section of `angular.json`
+```json
+        "test": {
+          "builder": "@angular-devkit/build-angular:jest",
+          "options": {
+            "tsConfig": "tsconfig.app.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+```
+
+as follows
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/5a2d0514-5e15-44bd-96fe-6d44f6bcdf7d)
+
+
 
 Add `"jest"` to the `compilerOptions.types` array in your `tsconfig.app.json`
 ```json
