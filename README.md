@@ -47,7 +47,7 @@ npm i -g pnpm@8.13
 pnpm install
 ```
 
-### Run
+### Serve the website
 
 ```bash
 ng serve
@@ -62,6 +62,19 @@ point browser to http://localhost:4200/
 <br>
 <br>
 <br>
+
+
+
+### Run jest
+
+```bash
+ng test
+```
+
+You should see something like
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c6f57e1f-4a78-4e58-a6bc-789a5ae76e65)
+
 
 
 ## How this repo was created
