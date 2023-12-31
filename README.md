@@ -47,7 +47,7 @@ ng serve
 ```
 point browser to http://localhost:4200/
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/d336f66b-4ba8-47eb-ab78-315d1fb2f2cc)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b24bdf76-20ca-4a17-8c62-135911f0c1ee)
 
 
 <br>
