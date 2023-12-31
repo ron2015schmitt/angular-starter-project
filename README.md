@@ -15,7 +15,10 @@ Tools / packages
 - [Sass](https://sass-lang.com/)
 - RxJs: 7.8.1
 
-[SSR](https://angular.io/guide/ssr) is now an option in Angular!
+[SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section <a name="repo-create">How this repo was created</a>
+
+
+
 
 Material Design 3.0 coming later in 2024...
 
@@ -89,7 +92,7 @@ You should see something like
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c6f57e1f-4a78-4e58-a6bc-789a5ae76e65)
 
 
-
+<a name="repo-create"></a>
 ## How this repo was created
 
 ### Compatibility Guides
