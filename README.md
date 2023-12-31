@@ -13,6 +13,9 @@ Tools / packages
 - [Javascript ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg)
 - [TypeScript 5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html)
 - [Sass](https://sass-lang.com/)
+- RxJs: 7.8.1
+
+[SSR](https://angular.io/guide/ssr) is now an option in Angular!
 
 Material Design 3.0 coming later in 2024...
 
@@ -90,6 +93,9 @@ ng new angular-starter-project --minimal --skip-tests --skip-git --package-manag
 Answer questions when prompted:
 
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/d1b5eabc-c2ee-47d2-a39f-d5a23918af7f)
+
+
+Note that if you would like [SSR](https://angular.io/guide/ssr), then answer yes above.
 
 
 ### Edit `.gitignore`
