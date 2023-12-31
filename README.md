@@ -202,23 +202,6 @@ pnpm add @types/jest --save-dev
 pnpm --recursive update
 ```
 
-Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"/"build"/"options"/"polyfills"` section
-
-```json
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser-esbuild",
-          "options": {
-            "outputPath": "dist/angular-starter-project",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"  <-- add this
-            ],
-```
-
-
 Add the following `"test"` section inside the "architect" section of `angular.json`
 ```json
         "test": {
