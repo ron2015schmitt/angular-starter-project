@@ -1,4 +1,4 @@
-
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c03c0b10-c7c9-42cc-bfc9-c6da09c06110)
 
 
 # Angular Starter Project With Tools 2024 (Angular 17.0.8)
@@ -15,6 +15,7 @@ Tools / packages
 - jest 29.7
 - [Javascript ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg)
 - [TypeScript 5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html)
+- [Sass](https://sass-lang.com/)
 
 Material Design 3.0 coming later in 2024...
 
@@ -25,8 +26,8 @@ Material Design 3.0 coming later in 2024...
 ```bash
 nvm install 20.10
 nvm use 20.10
-npm i -g npm@10.2
-npm i -g pnpm@8.13
+npm i npm@10.2
+npm i pnpm@8.13
 ```
  
 ### Clone repo
@@ -63,8 +64,8 @@ point browser to http://localhost:4200/
 ```bash
 nvm install 20.10
 nvm use 20.10
-npm i -g npm@10.2
-npm i -g pnpm@8.13
+npm i npm@10.2
+npm i pnpm@8.13
 ```
 
 ### Set up Angular 
@@ -72,7 +73,7 @@ npm i -g pnpm@8.13
 The current version of the global Angular CLI determines the version of Angular to be used.  
 
 ```bash
-npm install -g @angular/cli@17.0
+npm install @angular/cli@17.0
 ```
 
 ### Create Angular scaffolding 
@@ -87,6 +88,46 @@ Answer questions when prompted:
 
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/d1b5eabc-c2ee-47d2-a39f-d5a23918af7f)
 
+
+### Edit `.gitignore`
+
+Add the following to `.gitignore`
+
+```gitignore
+.angular/cache/
+```
+
+
+### Change project version in `package.json`
+
+In your project `package.json`, change project version to match Angular version 
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/fca9a8a2-b978-401e-b3e3-e82a71dec17f)
+
+### Add  `bin`  and `engines` sections to the `package.json`
+
+Add the tool versions to `package.json`
+
+```json
+  "bin": {
+    "myng": "./node_modules/@angular/cli/bin/ng"
+  },
+  "engines": {
+    "node": "20.10",
+    "npm": "10.2",
+    "pnpm": "8.13"
+  },
+```
+
+Check the versions
+
+```bash
+ng version
+```
+
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9473add-10b3-4f66-b00e-310bdb3b6b1e)
+
+  
 
 ### Add TypeScript
 
@@ -126,28 +167,16 @@ in the following location
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
 
 
-### Add `engines` and `bin` sections to the `package.json`
+### Fix schema validation bug in 
 
-Add the tool versions to `package.json`
+Angular 17.09 introduced the following bug:
 
-```json
-  "bin": {
-    "myng": "./node_modules/@angular/cli/bin/ng"
-  },
-  "engines": {
-    "node": "20.10",
-    "npm": "10.2",
-    "pnpm": "8.13"
-  },
-```
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9c7eb1c-4650-46f3-9eb0-c4a14ee567e6)
 
-Check the versions
 
-```bash
-ng version
-```
+To fix this change `"browser"` to `"main"` in `angular.json`
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9473add-10b3-4f66-b00e-310bdb3b6b1e)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/a808cdec-6eed-4785-bb87-3c85adf4caf2)
 
 
 
