@@ -168,7 +168,7 @@ Add the text `, "zone.js/testing"` to your `angular.json` in the `"architect"` s
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/sample-angular-project",
+            "outputPath": "dist/angular-starter-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

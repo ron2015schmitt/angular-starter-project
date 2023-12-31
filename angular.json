@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "sample-angular-project": {
+    "angular-starter-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -44,9 +44,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/sample-angular-project",
+            "outputPath": "dist/angular-starter-project",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -93,10 +93,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "sample-angular-project:build:production"
+              "buildTarget": "angular-starter-project:build:production"
             },
             "development": {
-              "buildTarget": "sample-angular-project:build:development"
+              "buildTarget": "angular-starter-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,7 +104,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "sample-angular-project:build"
+            "buildTarget": "angular-starter-project:build"
           }
         }
       }

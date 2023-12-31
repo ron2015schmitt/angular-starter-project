@@ -14,5 +14,5 @@ import { RouterOutlet } from '@angular/router';
   styles: [],
 })
 export class AppComponent {
-  title = 'sample-angular-project';
+  title = 'angular-starter-project';
 }
