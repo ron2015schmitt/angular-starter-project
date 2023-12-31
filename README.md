@@ -15,7 +15,11 @@
 - [Sass](https://sass-lang.com/)
 - RxJs: 7.8.1
 
+
+Material Design 3.0 support coming later in 2024...
+
 [SSR](https://angular.io/guide/ssr) is now an option in Angular!  SSR is not included in this starter project, but refer to section [How this Repo was Created](#repo-create) on how to enable SSR. 
+
 
 
 ## Angular compatibility Guides
@@ -24,7 +28,7 @@
 - [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
 
-Material Design 3.0 coming later in 2024...
+
 
 ## install
 
