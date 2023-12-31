@@ -1,6 +1,6 @@
 {
   "name": "angular-starter-project",
-  "version": "17.0",
+  "version": "17.0.8",
   "bin": {
     "myng": "./node_modules/@angular/cli/bin/ng"
   },
