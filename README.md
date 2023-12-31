@@ -92,7 +92,7 @@ Answer questions when prompted:
 
 Starting in Angular 17.0, TypeScript is now included by default!
 
-### Set up integrated vite / esbuild in Angular 16
+### Set up integrated vite / esbuild 
 
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
 
