@@ -1,5 +1,5 @@
 
-<span style="background-color: #FFFF00">Marked text</span>
+
 
 # Angular Starter Project With Tools 2024 (Angular 17.0)
 
