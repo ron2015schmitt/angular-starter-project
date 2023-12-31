@@ -1,7 +1,4 @@
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c03c0b10-c7c9-42cc-bfc9-c6da09c06110)
-
-
-# Angular Starter Project With Tools 2024 (Angular 17.0.8)
+# Angular Starter Project With Tools 2024: Angular 17.0.8
 
 Tools / packages
 
@@ -50,7 +47,13 @@ ng serve
 ```
 point browser to http://localhost:4200/
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/5cfdf453-d959-402e-8f41-4cd7b1aa6e96)
+![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/d336f66b-4ba8-47eb-ab78-315d1fb2f2cc)
+
+
+<br>
+<br>
+<br>
+
 
 ## How this repo was created
 
