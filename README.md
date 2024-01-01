@@ -1,5 +1,9 @@
 # Angular Starter Project With Tools 2024: Angular 17.0.8
 
+
+[Angular 17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
+
+
 ## Tools / packages included
 
 |  Tool | Version |
@@ -217,49 +221,8 @@ ng version
 
 ### Set up integrated vite / esbuild 
 
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
 
-
->In ng serve we’re now using Vite for the development server, and esbuild powers both your development and production builds!
->
->We want to emphasize that Angular CLI relies on Vite exclusively as a development server. To support selector matching, the Angular compiler needs to maintain a dependency graph between your components which requires a different compilation model than Vite.
-
-https://blog.angular.io/angular-v16-is-here-4d7a28ec680d
-
-
-#### Set up vite during `ng build`
-
-In your project `angular.json`, add `-esbuild` to the following line
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/98e502f5-3677-423d-bc01-05d0c3f46141)
-
-
-
-#### Set up vite during `ng serve`
-
-Then (also in `angular.json`) add the text
-```json
-          "options": {
-            "forceEsbuild": true
-          },
-```
-
-in the following location
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
-
-
-### Fix schema validation bug in Angular 17
-
-Angular 17.0 introduced the following bug:
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9c7eb1c-4650-46f3-9eb0-c4a14ee567e6)
-
-
-To fix this change `"browser"` to `"main"` in `angular.json`
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/a808cdec-6eed-4785-bb87-3c85adf4caf2)
-
+Vite / esbuold are now the default for new projects!
 
 
 ### Set up Jest 
