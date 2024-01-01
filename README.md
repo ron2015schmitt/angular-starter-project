@@ -1,28 +1,44 @@
 # Angular Starter Project With Tools 2024: Angular 17.0.8
 
-Tools / packages
 
-- [Angular](https://github.com/angular/angular) 17.0
-- [Angular CLI](https://github.com/angular/angular-cli) 17.0
-- [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve`
-- nvm
-- nodejs 20.10
-- npm 10.2
-- pnpm 8.13
-- jest 29.7
-- [Javascript ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg)
-- [TypeScript 5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html)
-- [Sass](https://sass-lang.com/)
-- RxJs: 7.8.1
-
-[SSR](https://angular.io/guide/ssr) is now an option in Angular!  Refer to section [How this Repo was Created](#repo-create) 
+[Angular 17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
 
 
+## Tools / packages included
+
+|  Tool | Version |
+| ------------- | ------------- | 
+| [Angular](https://github.com/angular/angular) | 17.0 |
+| [Angular CLI](https://github.com/angular/angular-cli) | 17.0 |
+| [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve` | -- | 
+| nvm | (v0.39) |
+| NodeJs | 20.10 |
+| npm | 10.2 |
+| pnpm | 8.13 |
+| jest | 29.7 |
+| JavaScript | [ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg) |
+| TypeScript | [5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html) |
+| [Sass](https://sass-lang.com/) | -- |
+| RxJs | 7.8.1 |
 
 
-Material Design 3.0 coming later in 2024...
+Material Design 3.0 support coming later in 2024...
 
-## install
+[SSR](https://angular.io/guide/ssr) is now an option in Angular!  SSR is not included in this starter project, but refer to section [How this Repo was Created](#repo-create) on how to enable SSR. 
+
+
+
+## Angular compatibility Guides
+
+- [Official Angular Compatibility Guide](https://angular.io/guide/versions)
+- [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
+
+
+
+
+## Installation
+
+The installation must be run from a linux terminal, or in Windows you can use a [git bash](https://gitforwindows.org/) terminal.
 
 
 ### Clone repo
@@ -32,9 +48,32 @@ git clone https://github.com/ron2015schmitt/angular-starter-project.git
 cd angular-starter-project
 ```
 
-### Package manager setup.
+### Install `nvm`
+
+If you do not already have nvm installed,  execute the following to install [nvm](https://github.com/nvm-sh/nvm)
 
 ```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Notes:
+1. After the command executes close out your terminal and open a new terminal to ensure everything was installed correctly
+2. You can check the [nvm git repo](https://github.com/nvm-sh/nvm) to find the latest version number instead of 0.39.7.
+3. To upgrade `nvm`, you use the same command as given above.
+
+Check the verison of `nvm`
+
+```bash
+nvm -v
+```
+
+
+### Package manager setup.
+
+The project utilizes the [pnpm](https://pnpm.io/) package manager.  However `npm` is needed to install `pnpm`.
+
+```bash
+cd angular-starter-project
 nvm install 20.10
 nvm use 20.10
 npm i -g npm@10.2
@@ -42,11 +81,11 @@ npm i -g pnpm@8.13
 ```
 
 **Notes**
-1. With nvm, using `-g` is preferred because it only applies to the specific NodeJs version
-2. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`
-3. After this step, **always use** `pnpm`
+1. With nvm, using the global option `-g` is preferred because it only applies to the specific NodeJs version.
+2. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`.
+3. After this step, **always use** `pnpm`.
 4. `pnpm` uses `pnpm-lock.yaml` instead of `package-lock.json`
-5. If by mistake, you run npm to install the project or a project package, execute the following (**with care**) to fix:
+5. If by mistake, you run `npm` to install the project or a project package, execute the following (**with care**) to fix:
 ```bash
 rm package-lock.json
 rm -fr node_modules/
@@ -75,12 +114,6 @@ point browser to http://localhost:4200/
 | ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b24bdf76-20ca-4a17-8c62-135911f0c1ee)  |
 
 
-<br>
-<br>
-<br>
-
-
-
 ### Run jest
 
 ```bash
@@ -93,12 +126,16 @@ You should see something like
 
 
 
+<br>
+<br>
+<br>
+
+
+
+
+
 ## <a name="repo-create"></a> How this repo was created
 
-### Compatibility Guides
-
-- [Official Angular Compatibility Guide](https://angular.io/guide/versions)
-- [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
 ### Set up package managers: nvm, npm, pnpm
 
@@ -114,10 +151,10 @@ npm i -g pnpm@8.13
 
 ### Set up Angular 
 
-The current version of the global Angular CLI determines the version of Angular to be used.  
+The current version of the global Angular CLI determines the version of Angular to be used, installed via `npm` (not `pnpm`) because we are not in a project yet.
 
 ```bash
-npm install @angular/cli@17.0
+npm i -g @angular/cli@17.0
 ```
 
 ### Create Angular scaffolding 
@@ -126,6 +163,7 @@ The following creates `angular.json` and the `src` directory for the sample app.
 
 ```bash
 ng new angular-starter-project --minimal --skip-tests --skip-git --package-manager=pnpm
+cd angular-starter-project
 ```
 
 Answer questions when prompted:
@@ -149,6 +187,9 @@ Add the following to `.gitignore`
 
 Starting in Angular 17.0, TypeScript is now included by default!
 
+### Set up integrated vite / esbuild 
+
+Starting in Angular 17.0, Vite / esbuild are now the default for new projects!
 
 ### Change project version in `package.json`
 
@@ -180,51 +221,6 @@ ng version
 ![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/10faf300-c155-4882-95e9-033b7cc6f866)
 
 
-
-### Set up integrated vite / esbuild 
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/c91fe9f2-6a4c-4749-86bd-484a964c1d68)
-
-
->In ng serve we’re now using Vite for the development server, and esbuild powers both your development and production builds!
->
->We want to emphasize that Angular CLI relies on Vite exclusively as a development server. To support selector matching, the Angular compiler needs to maintain a dependency graph between your components which requires a different compilation model than Vite.
-
-https://blog.angular.io/angular-v16-is-here-4d7a28ec680d
-
-
-#### Set up vite during `ng build`
-
-In your project `angular.json`, add `-esbuild` to the following line
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/98e502f5-3677-423d-bc01-05d0c3f46141)
-
-
-
-#### Set up vite during `ng serve`
-
-Then (also in `angular.json`) add the text
-```json
-          "options": {
-            "forceEsbuild": true
-          },
-```
-
-in the following location
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/f399a464-7c45-4129-a51a-a23d8241a72b)
-
-
-### Fix schema validation bug in 
-
-Angular 17.0 introduced the following bug:
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/b9c7eb1c-4650-46f3-9eb0-c4a14ee567e6)
-
-
-To fix this change `"browser"` to `"main"` in `angular.json`
-
-![image](https://github.com/ron2015schmitt/angular-starter-project/assets/11559541/a808cdec-6eed-4785-bb87-3c85adf4caf2)
 
 
 
