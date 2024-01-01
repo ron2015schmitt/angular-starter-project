@@ -83,8 +83,8 @@ npm i -g pnpm@8.13
 **Notes**
 1. With nvm, using the global option `-g` is preferred because it only applies to the specific NodeJs version.
 1. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`:
-  - Always use `npm` for packages installed globally.
-  - Always use `pnpm` for project packages (ie local intsall). 
+   * Always use `npm` for packages installed globally.
+   * Always use `pnpm` for project packages (ie local intsall). 
 1. The Angular version is installed locally in the project. You can install globally for this version of NodeJs using
 ```bash
 npm i -g @angular/cli@17.0
