@@ -187,6 +187,9 @@ Add the following to `.gitignore`
 
 Starting in Angular 17.0, TypeScript is now included by default!
 
+### Set up integrated vite / esbuild 
+
+Starting in Angular 17.0, Vite / esbuild are now the default for new projects!
 
 ### Change project version in `package.json`
 
@@ -219,10 +222,6 @@ ng version
 
 
 
-### Set up integrated vite / esbuild 
-
-
-Vite / esbuold are now the default for new projects!
 
 
 ### Set up Jest 
