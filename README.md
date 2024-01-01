@@ -69,6 +69,7 @@ nvm -v
 The project utilizes the [pnpm](https://pnpm.io/) package manager.  However `npm` is needed to install `pnpm`.
 
 ```bash
+cd angular-starter-project
 nvm install 20.10
 nvm use 20.10
 npm i -g npm@10.2
@@ -146,10 +147,10 @@ npm i -g pnpm@8.13
 
 ### Set up Angular 
 
-The current version of the global Angular CLI determines the version of Angular to be used.  
+The current version of the global Angular CLI determines the version of Angular to be used, installed via `npm` (not `pnpm`) because we are not in a project yet.
 
 ```bash
-npm install @angular/cli@17.0
+npm i -g @angular/cli@17.0
 ```
 
 ### Create Angular scaffolding 
@@ -158,6 +159,7 @@ The following creates `angular.json` and the `src` directory for the sample app.
 
 ```bash
 ng new angular-starter-project --minimal --skip-tests --skip-git --package-manager=pnpm
+cd angular-starter-project
 ```
 
 Answer questions when prompted:
