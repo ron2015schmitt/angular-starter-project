@@ -179,14 +179,6 @@ Answer questions when prompted:
 Note that if you would like [SSR](https://angular.io/guide/ssr), then answer yes above.
 
 
-### Edit `.gitignore`
-
-Add the following to `.gitignore`
-
-```gitignore
-.angular/cache/
-```
-
 
 ### Add TypeScript
 
