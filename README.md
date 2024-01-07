@@ -80,7 +80,9 @@ npm i -g npm@10.2
 npm i -g pnpm@8.13
 ```
 
+
 **Notes**
+1. You must execute `nvm use 20.10`  in every new terminal when using this project!  However, if you forget, `ng` will issue a warning.
 1. With nvm, using the global option `-g` is preferred because it only applies to the specific NodeJs version.
 1. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`:
    * Always use `npm` for packages installed globally.
