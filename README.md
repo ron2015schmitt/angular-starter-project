@@ -1,21 +1,19 @@
-# Angular Starter Project With Tools 2024: Angular 17.1.0
-
-
-[Angular Releases](https://github.com/angular/angular/releases)
+# Angular Starter Project With Tools 2024: Angular 17.0.9
 
 [Angular 17 Overview](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
+
 
 ## Tools / packages included
 
 |  Tool | Version |
 | ------------- | ------------- | 
-| [Angular](https://github.com/angular/angular) | 17.1 |
+| [Angular](https://github.com/angular/angular) | 17.0 |
 | [Angular CLI](https://github.com/angular/angular-cli) | 17.0 |
 | [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve` | -- | 
 | nvm | (v0.39) |
-| NodeJs | 20.10 |
+| NodeJs | 20.11 |
 | npm | 10.2 |
-| pnpm | 8.13 |
+| pnpm | 8.14 |
 | jest | 29.7 |
 | JavaScript | [ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg) |
 | TypeScript | [5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html) |
@@ -31,9 +29,25 @@ Material Design 3.0 support coming later in 2024...
 
 ## Angular compatibility Guides
 
+
+Before updating NodeJS, you must make sure that Angular supports it.
+
 - [Official Angular Compatibility Guide](https://angular.io/guide/versions)
 - [Unofficial Angular Compatibility Guide](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)
 
+
+## Releases
+
+
+[Angular Releases](https://github.com/angular/angular/releases)
+
+[NodeJs Current Release](https://nodejs.org/en/download/current)
+
+[NodeJs Releases](https://nodejs.org/dist/)
+
+[pnpm Releases](https://github.com/pnpm/pnpm/tags)
+
+[nvm Releases](https://github.com/nvm-sh/nvm/releases)
 
 
 
@@ -75,22 +89,22 @@ The project utilizes the [pnpm](https://pnpm.io/) package manager.  However `npm
 
 ```bash
 cd angular-starter-project
-nvm install 20.10
-nvm use 20.10
+nvm install 20.11
+nvm use 20.11
 npm i -g npm@10.2
-npm i -g pnpm@8.13
+npm i -g pnpm@8.14
 ```
 
 
 **Notes**
-1. You must execute `nvm use 20.10`  in every new terminal when using this project!  However, if you forget, `ng` will issue a warning.
+1. You must execute the above `nvm use` command  in every new terminal when using this project!  However, if you forget, `ng` will issue a warning.
 1. With nvm, using the global option `-g` is preferred because it only applies to the specific NodeJs version.
 1. Yes, we use `npm` not `pnpm` in the above to install `npm` and `pnpm`:
    * Always use `npm` for packages installed globally.
    * Always use `pnpm` for project packages (ie local intsall). 
 1. The Angular version is installed locally in the project. You can install globally for this version of NodeJs using
 ```bash
-npm i -g @angular/cli@17.0
+npm i -g @angular/cli@VERSION
 ```
 1. `pnpm` uses `pnpm-lock.yaml` instead of `package-lock.json`
 1. If by mistake, you run `npm` to install the project or a project package, execute the following (**with care**) to fix:
@@ -264,5 +278,32 @@ Add `"jest"` to the `compilerOptions.types` array in your `tsconfig.app.json`
     ]
   },
 ```
+
+
+### Upgrading minor versions
+
+Before updating NodeJS, you must make sure that Angular supports it.
+
+```bash
+nvm install NODEJS_VERSION
+npm i -g npm@VERSION
+pnpm i -g pnpm@VERSION
+pnpm i -g @angular@VERSION
+```
+
+Update the `"engines"` versions in `package.json`.
+
+Then update all the other packages:
+
+```bash
+pnpm update
+```
+
+test it out
+
+```bash
+ng serve
+```
+
 
 
