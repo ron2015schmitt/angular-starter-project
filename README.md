@@ -7,8 +7,8 @@
 
 |  Tool | Version |
 | ------------- | ------------- | 
-| [Angular](https://github.com/angular/angular) | 17.0 |
-| [Angular CLI](https://github.com/angular/angular-cli) | 17.0 |
+| [Angular](https://github.com/angular/angular) | 17.0.9 |
+| [Angular CLI](https://github.com/angular/angular-cli) | 17.0.10 |
 | [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve` | -- | 
 | nvm | (v0.39) |
 | NodeJs | 20.11 |
@@ -18,7 +18,7 @@
 | JavaScript | [ECMA2022](https://dev.to/brayanarrieta/new-javascript-features-ecmascript-2022-with-examples-4nhg) |
 | TypeScript | [5.2](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html) |
 | [Sass](https://sass-lang.com/) | -- |
-| RxJs | 7.8.1 |
+| RxJs | 7.8 |
 
 
 Material Design 3.0 support coming later in 2024...
