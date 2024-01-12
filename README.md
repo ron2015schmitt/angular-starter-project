@@ -1,4 +1,4 @@
-# Angular Starter Project With Tools 2024: Angular 17.0.9
+# Angular Starter Project With Tools 2024: Angular 17.0.10
 
 [Angular 17 Overview](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
 
