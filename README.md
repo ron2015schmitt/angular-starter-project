@@ -1,14 +1,15 @@
-# Angular Starter Project With Tools 2024: Angular 17.0.8
+# Angular Starter Project With Tools 2024: Angular 17.1.0
 
 
-[Angular 17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
+[Angular Releases](https://github.com/angular/angular/releases)
 
+[Angular 17 Overview](https://blog.angular.io/introducing-angular-v17-4d7033312e4b)
 
 ## Tools / packages included
 
 |  Tool | Version |
 | ------------- | ------------- | 
-| [Angular](https://github.com/angular/angular) | 17.0 |
+| [Angular](https://github.com/angular/angular) | 17.1 |
 | [Angular CLI](https://github.com/angular/angular-cli) | 17.0 |
 | [Angular integrated vite / esbuild](https://angular.io/guide/esbuild) for `ng build` and `ng serve` | -- | 
 | nvm | (v0.39) |
